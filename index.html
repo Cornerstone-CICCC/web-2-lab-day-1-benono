@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City/Weather Search</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <!-- YOUR CODE HERE -->
-  
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City/Weather Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="is_day">
+    <form>
+      <input type="text" id="city" placeholder="Enter City" />
+      <button type="submit">Search</button>
+    </form>
+    <div class="container hidden">
+      <div class="hero-section">
+        <div class="city-name">Toronto</div>
+        <div class="temperature">10°C</div>
+      </div>
+      <div class="city-info">
+        <div class="country city-info-item">
+          <div class="info-column">Country</div>
+          <div class="data-column">Canada</div>
+        </div>
+        <div class="timezone city-info-item">
+          <div class="info-column">Timezone</div>
+          <div class="data-column">America/New_York</div>
+        </div>
+        <div class="population city-info-item">
+          <div class="info-column">Population</div>
+          <div class="data-column">37,000,000</div>
+        </div>
+        <div class="tomorrows-weather city-info-item">
+          <div class="info-column">Tomorrow's Weather</div>
+          <div class="data-column">
+            <div class="low">10</div>
+            <div class="high">20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
